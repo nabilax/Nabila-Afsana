@@ -15,7 +15,9 @@
     <style>
       /* Custom styles */
       body {
-        background-color: black; /* Set the background color */
+        background-color: #1a1a1a; /* Set the background color */
+        background-image: url('denim.png'); /* Replace with the actual path to your pattern image */
+        background-repeat: repeat;
         color: white; /* Set text color */
       }
 
@@ -28,7 +30,9 @@
         transform: scale(1.1); /* Increase to your desired scale */
       }
       .education-box {
-        background-color: #333;
+        background-color: rgba(51, 51, 51, 0.5);
+        
+        border-bottom: 2px solid white;
         padding: 20px;
         transition: transform 0.3s ease-in-out;
         cursor: pointer;
@@ -39,7 +43,7 @@
       }
 
       .profile-img {
-        max-width: 230px; /* Adjust the size as needed */
+        max-width: 200px; /* Adjust the size as needed */
         height: auto;
         border-radius: 50%;
         border-style: outset;
@@ -54,9 +58,23 @@
       }
 
       .section-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
+       font-size: 1.5rem;
+       margin-bottom: 10px;
+      }
+       .skill-box {
+    background-color: rgba(51, 51, 51, 0.5); 
+       }
+
+       .skill-box2 {
+    background-color: rgba(165, 165, 172, 0.5);
+       }
+
+       .experience-box {
+        background-color: rgba(51, 51, 51, 0.5);
+       }
+
+      
+
     </style>
     
   </head>
@@ -92,7 +110,7 @@
     <section id="profile" class="container mt-5">
       <!-- First Section: Name, Designation, Overview, Profile Image -->
       <div class="text-center">
-        <img src="me6.png" alt="Your Profile" class="profile-img" />
+        <img src="me9.png" alt="Your Profile" class="profile-img" />
         <h2>Nabila Afsana</h2>
         <p class="mb-0">UI/UX Designer | Software Engineer</p>
         <p  class="mb-2 small"><i class="bi bi-envelope-fill"></i>&nbsp;tubacpscr12@gmail.com&nbsp;&nbsp; </p>
@@ -115,7 +133,7 @@
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <!-- <div class="education-box" onmouseover="animateEducationBox(this)"> -->
-            <div class="education-box">
+            <div class="education-box ">
             <p class="education-title">
               <i class="bi bi-mortarboard-fill"></i> Higher Diploma in Software Engineering
             </p>
@@ -170,32 +188,32 @@
         <h2>Skills</h2>
       </div>
       <div class="row align-middle">
-        <div class="col-lg-3 col-md-6 col-sm-12  bg-dark d-flex justify-content-center align-middle">
-          <div class="skill-box p-3 txt">
+        <div class="skill-box col-lg-3 col-md-6 col-sm-12  d-flex justify-content-center align-middle " style="border-bottom: 2px solid white;">
+          <div class="p-3 txt">
             <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
             <p>Bootstrap</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12  bg-secondary  d-flex justify-content-center align-middle">
-          <div class="skill-box p-3">
+        <div class=" skill-box2 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-middle">
+          <div class="p-3">
             <p>Figma</p>
             <p>Axure</p>
             <p>Photoshop</p>
             <p>Indesign</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-middle bg-dark">
-          <div class="skill-box p-3">
+        <div class="skill-box col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-middle " style="border-bottom: 2px solid white;">
+          <div class="p-3">
             <p>Canva</p>
             <p>WordPress</p>
             <p>React JS</p>
             <p>Java</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12  bg-secondary d-flex justify-content-center align-middle">
-          <div class="skill-box p-3">
+        <div class=" skill-box2 col-lg-3 col-md-6 col-sm-12   d-flex justify-content-center align-middle">
+          <div class="p-3">
             <p>Spring Boot</p>
             <p>MySQL</p>
             <p>Chat GPT</p>
@@ -210,22 +228,22 @@
         <h2>Work Experience</h2>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-sm-12 mb-4 bg-dark">
-          <div class="experience-box p-3">
+        <div class=" experience-box col-lg-4 col-md-12 col-sm-12 mb-4  ">
+          <div class=" p-3">
             <h5>R & D Executive <br/></h5><h6>EMACO Solutions Ltd. <br/></h6><p>Jan 2019 – Present (Part time-Remote)</p>
               <p><i class="bi bi-patch-check-fill"></i> Developed product datasheet, catalogs, submittals.<br/><br/>
               <i class="bi bi-patch-check-fill"></i> Developed project proposal, social media content, web content: emacoglobal.com</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 mb-4 bg-primary">
-          <div class="experience-box p-3">
+        <div class=" experience-box2 col-lg-4 col-md-12 col-sm-12 mb-4 bg-primary border-style" >
+          <div class="p-3">
             <h5>Word Press Web Content Manager<br/></h5><h6>Writing School <br/></h6><p>Mar 2022 – Aug 2022 (Remote)</p>
               <p><i class="bi bi-patch-check-fill"></i> Managed website content: coderclick.com, minitipsx.com.<br/><br/>
               <i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 mb-4 bg-dark">
-          <div class="experience-box p-3">
+        <div class="experience-box  col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="p-3">
             <h5>Junior Project Manager <br/></h5><h6>suPPPort Ltd.<br/></h6><p>Mar 2022 – Aug 2022 (Remote)</p>
               <p><i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.<br/><br/>
               <i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.</p>
@@ -239,8 +257,8 @@
       <h2>Contact</h2>
     </div>
     <div class="row ">
-      <div class="col-lg-12 col-md-12 col-sm-12 mb-4 bg-dark">
-    <div class="bg-dark p-4 ">
+      <div class="col-lg-12 col-md-12 col-sm-12 mb-4 " style="border-bottom: 2px solid white; background-color: rgba(51, 51, 51, 0.5);" >
+    <div class="p-4 ">
     <p>If you'd like to get in touch, feel free to email me at <a href="mailto:tubacpsr12@example.com">Nabila Afsana</a></p>
     <p><i class="bi bi-geo-alt-fill"></i>&nbsp;Dhaka, Bangladesh&nbsp;&nbsp; | &nbsp;&nbsp;<i class="bi bi-envelope-fill"></i>&nbsp;tubacpscr12@gmail.com&nbsp;&nbsp;|&nbsp;&nbsp;<i class="bi bi-telephone-fill"></i>&nbsp;+8801741531602</p>
   </div>
