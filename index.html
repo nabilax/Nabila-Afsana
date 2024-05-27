@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nabila Afsana</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <!-- Add Bootstrap CSS link -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Bootstrap CSS link -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -15,10 +15,10 @@
     <style>
       /* Custom styles */
       body {
-        background-color: #1a1a1a; /* Set the background color */
-        background-image: url('denim.png'); /* Replace with the actual path to your pattern image */
+        background-color: #1a1a1a; 
+        background-image: url('assets/img/denim.png'); 
         background-repeat: repeat;
-        color: white; /* Set text color */
+        color: white; 
       }
 
       .project-img {
@@ -27,7 +27,7 @@
         transition: transform 0.3s ease-in-out;
       }
       .project-img:hover {
-        transform: scale(1.1); /* Increase to your desired scale */
+        transform: scale(1.1); 
       }
       .education-box {
         background-color: rgba(51, 51, 51, 0.5);
@@ -43,7 +43,7 @@
       }
 
       .profile-img {
-        max-width: 210px; /* Adjust the size as needed */
+        max-width: 210px; 
         height: auto;
         border-radius: 50%;
         border-style: outset;
@@ -51,6 +51,14 @@
         margin-top: 20px;
         
       }
+
+      #projects {
+        background-image: url('assets/img/bac4.jpg');
+        background-size: cover; 
+        background-position: center; 
+        padding: 50px 0; 
+    }
+
       
       .project-title {
         font-size: 1.2rem;
@@ -63,15 +71,39 @@
       }
        .skill-box {
     background-color: rgba(51, 51, 51, 0.5); 
-       }
+    }
+
+    .tb{
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .ts{
+    padding-right: 2px;
+  }
 
        .skill-box2 {
     background-color: rgba(165, 165, 172, 0.5);
        }
 
-       .experience-box {
-        background-color: rgba(51, 51, 51, 0.5);
+    #experience {
+        background-image: url('assets/img/bac5.jpg');
+        background-size: cover; 
+        background-position: center; 
+        
+    }
+
+    .experience-box {
+        background-color: rgba(51, 51, 51, 0.8);
+
+        
        }
+
+       .experience-box2 {
+        background-color: rgba(99, 121, 233, 0.8);
+       }
+
 
       
 
@@ -91,13 +123,13 @@
               <a class="nav-link" href="#profile">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Project</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -110,12 +142,12 @@
     <section id="profile" class="container mt-5">
       <!-- First Section: Name, Designation, Overview, Profile Image -->
       <div class="text-center">
-        <img src="me9.png" alt="Your Profile" class="profile-img" />
+        <img src="assets/img/me8.png" alt="Your Profile" class="profile-img"  />
         <h2>Nabila Afsana</h2>
-        <p class="mb-0">UI/UX Designer | Software Engineer</p>
+        <p class="mb-0">Web Designer | Content Creator</p>
         <p  class="mb-2 small"><i class="bi bi-envelope-fill"></i>&nbsp;tubacpscr12@gmail.com&nbsp;&nbsp; </p>
         <p class="text-left d-flex justify-content-center text-justify">
-          Hi ! I am a Software Engineer and UI/UX Designer. I enjoy creating
+          Hi ! I am Nabila Afsana. I enjoy creating
           user-centric designs and passionate about improving the lives of
           others through design. I believe myself as proactive, and
           self-motivated, and always carry a positive attitude to learn new
@@ -156,68 +188,90 @@
         </div>
       </div>
     </section>
-      <section id="projects" class="container mt-5">
-      <div class="text-center mb-4">
-        <h2>Project</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <a href="p1.html" target="_blank">
-          <img src="p1.png" alt="Project 1" class="project-img" /></a>
-          <p class="project-title"><a href="p1.html" target="_blank">ABC Jobs Portal | UX Design</a></p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <a href="p2.html" target="_blank">
-          <img src="p2.png" alt="Project 2" class="project-img" /></a>
-          <p class="project-title"><a href="p2.html" target="_blank">XYZ Tutions | UI Design</a></p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <a href="p3.html" target="_blank">
-          <img src="p3.png" alt="Project 3" class="project-img" /></a>
-          <p class="project-title"> <a href="p3.html" target="_blank">Sentier | UI Design</a></p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-          <a href="p4.html" target="_blank">
-          <img src="p4.png" alt="Project 4" class="project-img" /></a>
-          <p class="project-title"><a href="p4.html" target="_blank">Neon Work | UI Design</a></p>
-        </div>
-      </div>
-    </section>
+
     <section id="skills" class="container mt-5 mb-5 text-white">
       <div class="text-center mb-4">
         <h2>Skills</h2>
       </div>
       <div class="row align-middle">
-        <div class="skill-box col-lg-3 col-md-6 col-sm-12  d-flex justify-content-center align-middle " style="border-bottom: 2px solid white;">
+        <div class="skill-box col-lg-3 " style="border-bottom: 2px solid white;">
           <div class="p-3 txt">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Bootstrap</p>
+            <p class="tb"><img src="assets/img/skills/html.png" width="10%" height="auto"  alt="HTML Icon">HTML</p>
           </div>
         </div>
-        <div class=" skill-box2 col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-middle">
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
           <div class="p-3">
-            <p>Figma</p>
-            <p>Axure</p>
-            <p>Photoshop</p>
-            <p>Indesign</p>
+            <p class="tb"><img src="assets/img/skills/figma.png" width="10%" height="auto"  alt="Figma Icon">Figma</p>
           </div>
         </div>
-        <div class="skill-box col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-middle " style="border-bottom: 2px solid white;">
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
           <div class="p-3">
-            <p>Canva</p>
-            <p>WordPress</p>
-            <p>React JS</p>
-            <p>Java</p>
+            <p class="tb"><img src="assets/img/skills/seo.png" width="10%" height="auto"  alt="seo Icon">SEO</p>
           </div>
         </div>
-        <div class=" skill-box2 col-lg-3 col-md-6 col-sm-12   d-flex justify-content-center align-middle">
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
           <div class="p-3">
-            <p>Spring Boot</p>
-            <p>MySQL</p>
-            <p>Chat GPT</p>
-            <p>SEO</p>
+            <p class="tb"><img src="assets/img/skills/kp.png" width="10%" height="auto"  alt="kp Icon"> Kapwing</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3 txt">
+            <p class="tb"><img src="assets/img/skills/css.png" width="12%" height="auto"  alt="css Icon"> CSS</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/axure.png" width="8%" height="auto" class="ts"  alt="ax Icon"> Axure</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/wp.png" width="10%" height="auto"  class="ts" alt="wp Icon"> WordPress</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/pp.png" width="10%" height="auto" class="ts"  alt="wp Icon">Adobe Premiere Pro</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3 txt">
+            <p class="tb"><img src="assets/img/skills/js.png" width="9%" height="auto"   alt="js Icon">JavaScript</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/ps.png" width="14%" height="auto"  alt="ps Icon"> Adobe Photoshop</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/is.png" width="10%" height="auto" class="ts"  alt="is Icon"> Adobe Illustrator</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3 " style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/mysql.png" width="10%" height="auto"  alt="wp Icon"> MySQL</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3 txt">
+            <p class="tb"><img src="assets/img/skills/bs.png" width="14%" height="auto"  alt="wp Icon"> Bootstrap</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/id.png" width="10%" height="auto" class="ts" alt="id Icon"> Adobe Indesign</p>
+          </div>
+        </div>
+        <div class="skill-box col-lg-3" style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/ca.webp" width="8%" height="auto" class="ts"  alt="wp Icon"> Canva</p>
+          </div>
+        </div>
+        <div class=" skill-box col-lg-3 " style="border-bottom: 2px solid white;">
+          <div class="p-3">
+            <p class="tb"><img src="assets/img/skills/php.png" width="14%" height="auto"  alt="wp Icon"> PHP</p>
           </div>
         </div>
       </div>
@@ -225,32 +279,81 @@
 
     <section id="experience" class="container mt-5 mb-5">
      <div class="text-center mb-4">
-        <h2>Work Experience</h2>
+        <h2 class="pt-3">Work Experience</h2>
       </div>
       <div class="row">
-        <div class=" experience-box col-lg-4 col-md-12 col-sm-12 mb-4  ">
+        <div class=" experience-box col-lg-4 col-md-12 col-sm-12 mb-4 ">
+          <div class=" p-3">
+            <h5>Web Designer & Content Creator <br/></h5><h6>Reach Process Outsourcing Pte Ltd.
+              <br/></h6><p>Oct 2023 – Present (Full time-Remote)</p>
+              <p><i class="bi bi-patch-check-fill"></i> Desinged website using HTML, CSS & JavaScript: <a href="https://www.reachaccountant.com/" target="_blank"  class="hyperlink">Reach Accountant</a>, <a href="https://www.zeppay.com/en-us//" target="_blank"  class="hyperlink">zeppay. </a> <br> Github Link: <a href="https://nabilax.github.io/reachaccountant/" target="_blank"  class="hyperlink">Reach Accountant</a>, <a href="https://nabilax.github.io/zeppay-v1/" target="_blank"  class="hyperlink">zeppay. </a><br> Figma Banner Design: <a href="https://shorturl.at/ioh6P" target="_blank"  class="hyperlink">Reach Accountant and Zeppay</a><br/><br/>
+              <i class="bi bi-patch-check-fill"></i> Designed social media poster using Figma: <a href="https://shorturl.at/csEH0" target="_blank"  class="hyperlink">Moiboo Business Automation Software Ads,  </a> & <a href="https://shorturl.at/jzFHP" class="hyperlink"> Carousels. </a> </p>
+              <i class="bi bi-patch-check-fill"></i> Created Videos using Kapwing, Adobe Premiere Pro: <a href="https://www.instagram.com/melbiflask/reels/" target="_blank"  class="hyperlink">Melbiflask </a><br/><br/>
+          </div>
+        </div>
+        <div class=" experience-box2 col-lg-4 col-md-12 col-sm-12 mb-4 border-style">
           <div class=" p-3">
             <h5>R & D Executive <br/></h5><h6>EMACO Solutions Ltd. <br/></h6><p>Jan 2019 – Present (Part time-Remote)</p>
-              <p><i class="bi bi-patch-check-fill"></i> Developed product datasheet, catalogs, submittals.<br/><br/>
-              <i class="bi bi-patch-check-fill"></i> Developed project proposal, social media content, web content: emacoglobal.com</p>
+              <p><i class="bi bi-patch-check-fill"></i> Developed product datasheet, catalogs, submittals, project proposal: <a href="https://drive.google.com/file/d/1OUmFYyK6BBatI4jnBSu_q0GyAOoikylM/view?usp=sharing" target="_blank"  style="color: aliceblue;" class="hyperlink">EMACO Product Catalog.</a> <br/><br/>
+              <i class="bi bi-patch-check-fill"></i> Managed web content and conducted keyword research: <a href="https://emacoglobal.com/all-solutions/emaco-clean-agent-fire-suppression-system/" style="color: aliceblue;" target="_blank"  class="hyperlink">emacoglobal.com</a>, social media content: <a href="https://www.facebook.com/bd.emacoglobal" style="color: aliceblue;" class="hyperlink">EMACO Bangladesh</a>  </p>
           </div>
         </div>
-        <div class=" experience-box2 col-lg-4 col-md-12 col-sm-12 mb-4 bg-primary border-style" >
+        <div class=" experience-box col-lg-4 col-md-12 col-sm-12 mb-4" >
           <div class="p-3">
-            <h5>Word Press Web Content Manager<br/></h5><h6>Writing School <br/></h6><p>Mar 2022 – Aug 2022 (Remote)</p>
-              <p><i class="bi bi-patch-check-fill"></i> Managed website content: coderclick.com, minitipsx.com.<br/><br/>
-              <i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.</p>
+            <h5>Software Engineer (Intern)<br/></h5><h6>CRID-DAM Robotic Labs Ltd. <br/></h6><p>Oct 2023 – Dec 2023 (Part time-Remote)</p>
+              <p><i class="bi bi-patch-check-fill"></i> Developed project work flow process, requirements doc, functional spec.<br/><br/>
+              <i class="bi bi-patch-check-fill"></i> Developed and maintained comprehensive test plans and test cases.<br/><br/>
+              <i class="bi bi-patch-check-fill"></i> Performed manual testing to ensure high-quality software releases: <a href="https://kambaiihealth.com/" style="color: aliceblue;" target="_blank" class="hyperlink">kambaiihealth.com.</a> </p>
+              <i class="bi bi-patch-check-fill"></i> Worked closely with developers to understand software functionalities and resolved issues.</p>
           </div>
         </div>
-        <div class="experience-box  col-lg-4 col-md-12 col-sm-12 mb-4">
-          <div class="p-3">
-            <h5>Junior Project Manager <br/></h5><h6>suPPPort Ltd.<br/></h6><p>Mar 2022 – Aug 2022 (Remote)</p>
-              <p><i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.<br/><br/>
-              <i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.</p>
-          </div>  
+      </div>
+
+        <div class="row justify-content-center">
+          <div class=" experience-box col-lg-4 col-md-12 col-sm-12 mb-4  " >
+            <div class="p-3">
+              <h5>WordPress Web Content Manager<br/></h5><h6>Writing School <br/></h6><p>Aug 2019 – Mar 2021 (Part time-Remote)</p>
+                <p><i class="bi bi-patch-check-fill"></i> Managed website content, conducted keyword research and analysis:  <a href="https://www.coderclick.com/how-to-remove-scratches-from-apple-watch-screen/3244/" target="_blank"  class="hyperlink">coderclick.com,</a> <a href="https://minitipsx.com/"  target="_blank" class="hyperlink">minitipsx.com.</a><br/><br/>
+                <i class="bi bi-patch-check-fill"></i> Managed a group of content writers and graphic designers.</p>
+            </div>
+          </div>
+          <div class=" experience-box2 col-lg-4 col-md-12 col-sm-12 mb-4 border-style" >
+            <div class=" p-3">
+              <h5>Junior Project Manager <br/></h5><h6> suPPPort Ltd. <br/></h6><p>Mar 2022 – Aug 2022 (Full time-Remote)</p>
+                <p><i class="bi bi-patch-check-fill"></i> Managed project proposal, project report, project documentation.<br/><br/>
+                <i class="bi bi-patch-check-fill"></i> Managed web content:  <a href="https://suppport.org/fashion-revolution-week-2022-money-fashion-power/" target="_blank"  class="hyperlink">suPPPort.org.</a> </p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section id="projects" class="container mt-5">
+      <div class="text-center mb-4">
+        <h2>Project</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <a href="p1.html" target="_blank">
+          <img src="assets/img/p1.png" alt="Project 1" class="project-img px-2" /></a>
+          <p class="project-title px-2"><a href="p1.html" target="_blank">ABC Jobs Portal | UX Design</a></p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <a href="p2.html" target="_blank">
+          <img src="assets/img/p2.png" alt="Project 2" class="project-img px-2" /></a>
+          <p class="project-title px-2"><a href="p2.html" target="_blank">XYZ Tutions | UI Design</a></p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <a href="p3.html" target="_blank">
+          <img src="assets/img/p3.png" alt="Project 3" class="project-img px-2" /></a>
+          <p class="project-title px-2"> <a href="p3.html" target="_blank">Sentier | UI Design</a></p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+          <a href="p4.html" target="_blank">
+          <img src="assets/img/p4.png" alt="Project 4" class="project-img px-2" /></a>
+          <p class="project-title px-2"><a href="p4.html" target="_blank">Neon Work | UI Design</a></p>
+        </div>
       </div>
     </section>
-
      <!-- Contact Section -->
   <section id="contact" class="container mt-5 mb-5 ">
     <div class="text-center mb-4 ">
